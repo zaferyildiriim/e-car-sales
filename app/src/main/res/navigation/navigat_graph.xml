@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigat_graph"
+    app:startDestination="@id/personFragment">
+    <fragment
+        android:id="@+id/personFragment"
+        android:name="com.example.myapplication2.PersonFragment"
+        android:label="fragment_person"
+        tools:layout="@layout/fragment_person">
+        <action
+            android:id="@+id/action_personFragment_to_set_Info"
+            app:destination="@id/set_Info" />
+    </fragment>
+    <fragment
+        android:id="@+id/set_Info"
+        android:name="com.example.myapplication2.SetInfo"
+        android:label="fragment_set__info"
+        tools:layout="@layout/fragment_set__info">
+        <action
+            android:id="@+id/action_set_Info_to_personFragment"
+            app:destination="@id/personFragment" />
+        <argument
+            android:name="userid"
+            app:argType="string"
+            android:defaultValue='newuser' />
+    </fragment>
+</navigation>

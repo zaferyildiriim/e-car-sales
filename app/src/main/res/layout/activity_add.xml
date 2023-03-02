@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="40dp"
+        >
+
+
+        <TextView
+            android:id="@+id/markaSec"
+            android:layout_width="334dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+
+            android:text="Marka Seçiniz"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinnerMarka"
+            android:layout_width="264dp"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:id="@+id/modelSec"
+            android:layout_width="334dp"
+            android:layout_height="42dp"
+
+            android:gravity="center"
+            android:text="Model Seçiniz"
+
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <Spinner
+            android:id="@+id/spinnerModel"
+            android:layout_width="262dp"
+            android:layout_height="36dp" />
+
+        <TextView
+            android:id="@+id/paketSec"
+            android:layout_width="334dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="Paket Seç"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <Spinner
+            android:id="@+id/spinnerPaket"
+            android:layout_width="265dp"
+            android:layout_height="43dp" />
+
+        <TextView
+            android:id="@+id/yakıtSec"
+            android:layout_width="334dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="Yakıt Seç"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <Spinner
+            android:id="@+id/spinnerYakıt"
+            android:layout_width="265dp"
+            android:layout_height="43dp" />
+        <TextView
+            android:id="@+id/renkSec"
+            android:layout_width="334dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="Renk Seç"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <Spinner
+            android:id="@+id/spinnerRenk"
+            android:layout_width="265dp"
+            android:layout_height="43dp" />
+
+
+        <TextView
+            android:id="@+id/modelYılı"
+            android:layout_width="334dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="Model YIlı Giriniz"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editModelYılı"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/aracFiyat"
+            android:layout_width="334dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="Fiyat Giriniz"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editFiyat"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+
+            android:hint="365.355"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/kmGirText"
+            android:layout_width="334dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="Aracın KM Gir"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editKm"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+
+            android:hint="200.000"
+            android:inputType="numberDecimal" />
+
+
+
+        <TextView
+            android:id="@+id/AcıklamaText"
+            android:layout_width="334dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="Açıklama"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editAcıklamaText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/butonFotoEkle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clickFotoEkle"
+            android:text="Fotoğraf Eklemek İçin Tıklayınız" />
+
+        <Button
+            android:id="@+id/butonIlanYayınla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clickYayınla"
+            android:text="İlan Yayınla" />
+
+        <Button
+            android:id="@+id/goHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="goHome"
+            android:text="Ana Sayfaya Dön" />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
